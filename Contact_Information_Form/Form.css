@@ -1,0 +1,67 @@
+html {
+    font-family: Arial;
+    background-image: url(images/wallpaper.jpg);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px #420d1fab;
+}
+
+form {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #e91e63;
+    border-radius: 30px;
+    background-color: #d5c0d3;
+}
+
+.required {
+    color: red;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="date"], input[type="time"], select,
+textarea {
+    margin: 10px;
+    border-radius: 25px; /* Makes the input fields oval */
+    padding: 10px; /* Adds padding for better appearance */
+    border: 3px solid #400540;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default webkit styles */
+    height: 8px;
+    width: 15%;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    margin:10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #400540;
+    cursor: pointer;
+}
+
+
+
+img {
+    margin-left: 10px;
+    max-width: 70%;
+    height: auto;
+    width: 70%;
+}
+
+input[type="submit"], input[type="reset"]{
+    
+    background-color: #951095;
+    height: 40px;
+    width: 80px;
+    color: white;
+    border-radius: 10px;
+}

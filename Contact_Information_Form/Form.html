@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/form_image.jpg">
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+<form>
+    <h1 align="center">Contact Information Form</h1>
+    <hr>
+    <b><i><span class="required">*</span> Indicates a required field</i></b><br><br><br>
+    <div>
+        <label for="username">Username <span class="required">*</span></label>
+        &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;
+        <label for="password">Password <span class="required">*</span></label><br>
+        <input type="text" id="username" required>
+        &ensp; &ensp;
+        <input type="password" id="password" required>
+        <br><br>
+        <label for="name">Name <span class="required">*</span></label><br>
+        <input type="text" id="name" required placeholder="xyz">
+        <br><br>
+        <label for="age">Age <span class="required">*</span></label><br>
+        <input type="number" id="age" required placeholder="30">
+
+        <img src="images/man_form.png" align="right">
+        
+        <br><br>
+        <label for="mail">Mail <span class="required">*</span></label><br>
+        <input type="email" id="mail" required placeholder="xyz@example.abc">
+        <br><br>
+        <label for="date">Date <span class="required">*</span></label><br>
+        <input type="date" id="date" required placeholder="dd/mm/yyyy">
+        <br><br>
+        <label for="time">Time <span class="required">*</span></label><br>
+        <input type="time" id="time" required placeholder="00:00:00">
+        <br><br>
+        <p>Select your gender:</p>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+        <br><br><br>
+        <label for="file">Upload Aadhaar</label><br><br>
+        <input type="file" id="file">
+        <br><br><br>
+        <p>Choose your favourite colour <span class="required">*</span></p>
+        <select name="colours" required>
+            <option>Black</option>
+            <option>Blue</option>
+            <option>Red</option>
+            <option>Green</option>
+        </select>
+        <br><br>
+        <label for="rate">Rate my form :) <span class="required">*</span></label><br><br>
+        <input type="range" id="rate" name="rate" min="1" max="5" step="1" required><br>
+        &ensp;1&ensp;&ensp;&ensp;2&ensp;&ensp;&ensp;3&ensp;&ensp;&ensp;4&ensp;&ensp;&ensp;5
+        <br><br>
+        <p>Your feedback is appreciated!</p>
+        <textarea name="feedback" rows="10" cols="30"></textarea>
+    </div>
+    <br><br>
+    <div>
+        <input type="submit" style="margin-right: 10px;">
+        <input type="reset">
+    </div>
+</form>
+</body>
+</html>

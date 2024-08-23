@@ -1,0 +1,660 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url("https://wallpaperswide.com/download/black_pattern_2-wallpaper-2400x1350.jpg");
+
+}
+
+header {
+    position: relative;
+    height: 75vh; 
+    width:100vw;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+header h1{
+	margin-top: -5px;
+	font-size: 5rem;
+	text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 2px 0 #000, 
+        1px 2px 0 #000;
+    font-family: "Philosopher", sans-serif;
+
+}
+
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-image: url("https://i.pinimg.com/474x/1e/25/d3/1e25d302451b2b45bb1250293ae0b4ce.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(6px);
+    z-index: -1; }
+
+#links {
+    position: absolute;
+    top: 29px; 
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+#links li a{
+	text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+    text-decoration: none;
+    text-transform: uppercase;
+	font-family: math;	
+    margin: 0 25px; 
+    color: white;
+    font-size: 1.2rem; 
+    padding:15px;
+}
+
+
+#links li a:hover{
+	border-bottom: 2px solid darkgrey;
+	font-weight: bolder;
+	border-radius: 20%;
+
+
+}
+
+#photo {
+    display: flex;
+    width: 100%;
+    justify-content: center; 
+    position: absolute;
+    top: 55%;
+    z-index: 3; 
+}
+
+#photo img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 6px white;
+    z-index: 3;
+}
+
+section{
+    background-image: url("https://wallpaperswide.com/download/black_pattern_2-wallpaper-2400x1350.jpg");
+    background-size: cover;
+    width: 100vw;
+    height:100vh;
+    z-index: -1;
+
+}
+#About{
+    height: 70vh;
+}
+
+#intro{
+	position: absolute;
+	top: 44%;
+	color: white;
+	font-size: 1.3rem;
+	padding: 350px;
+	line-height: 2.7rem;
+	text-align: center;
+	font-family: "Rokkitt", serif;
+}
+
+#Contact{
+	width:100%;
+	height:43vh;
+	background-image: url("https://wallpaperbat.com/img/750305-desktop-beautiful-wallpaper-hd-download-black-wallpaper-1080p-hd-wallpaper-background-download.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.heading{
+	text-align: center;
+	justify-content: center;
+	color: white;
+	font-size: 2rem;
+	padding-top:50px;
+}
+
+i{
+
+		margin-right: 1.2rem;
+	}
+
+hr{
+	color: white;
+	border-radius:80%;
+	width:30%;
+	justify-content: center;
+}
+
+#Skills{
+    height:90vh;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 0.2fr);
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 11%;
+    height: 60vh;
+    position: relative;
+    top:4%;
+}
+
+#container>div {
+    width: 12rem;
+    height: 12rem;
+    background-color: #9bacb773;
+    margin-top: 6%;
+    margin-bottom: 9%;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+#container div:hover {
+
+	background-color: lightblue;
+
+	span{
+		color: black;
+	}
+}
+
+#container div{
+
+    i{
+	font-size: 7.5rem;
+	margin-right: 1%; }
+
+    span{
+    margin-top:5%;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 2% 5% black; }
+
+    img{
+        width:60%;
+    }
+ }
+
+#plus{
+    margin-left:0.8rem;
+    font-size: 0.4rem;
+    flex-grow: 2;
+}
+
+.fa-microchip{
+    width:40%;
+    margin-left:-20%;
+    color: #6fbe13;
+}
+
+.fa-code
+{   
+    margin-top:-5%;
+    color:#7b0000;
+}
+
+.fa-rocket{
+    color:red;
+    transform: rotate(135deg); 
+    margin-top:2%;   
+    position:sticky; 
+    top:10%;
+    margin-right: 1.3%;
+    margin-bottom:  4%;
+    z-index:   2;
+}
+
+#dashed-line{ 
+    position:   relative;   
+    left:14.36%;
+    border:none;
+    border-left: 3px dashed lightgrey;
+    height: 70%;
+    border-radius:  0;
+    opacity:    0.4;
+    margin-top: -4%;
+}
+
+#edu-container{
+    width:80%;
+    height: 70%;
+    z-index: -1;
+    margin-top:-28%;
+    margin-left: 13%;
+
+    align-items: stretch;
+    padding:2%;
+}
+#edu-container div {
+
+    text-align: right;
+    flex-grow: 1;
+    margin: 3%;
+    width: 30%;
+    height: 40%;
+    margin-left: 3%;
+    margin-top: -8%;
+    position: relative; 
+
+    span{
+        display: block;
+    }
+
+  
+}
+
+#edu-container div::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 2px solid grey;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    right: -33.9%;
+    z-index: 1
+}
+
+#edu-container div:nth-child(2n)::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 2px solid grey;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    left:-31.8%;
+}
+
+#edu-container div:nth-child(2n) {
+    margin-left: 52%;
+    text-align: left;
+}
+
+#study{
+    color:#ff9800;
+    font-size: 1.2rem;
+    margin-bottom: 1%;
+}
+
+#institute, #time{
+    color:#ff9797;
+    font-size: 1rem;
+    margin-bottom:1%;
+}
+
+#content{
+    color:#b48aff;
+    font-size: 1rem;
+    margin-top: 7%;
+}
+
+#progress1{
+    position: absolute;
+    border-radius: 50%;
+    width:50%;
+    height:90%;
+    margin-left: -153%;
+    margin-top: -20%;
+}
+
+#progress2{
+    position: absolute;
+    border-radius: 50%;
+    width:50%;
+    height:90%;
+    margin-left: -216%;
+    margin-top: 20%;
+
+
+}
+
+#progress3{
+    position: absolute;
+    border-radius: 50%;
+    width:50%;
+    height:90%;
+    margin-left:170%;
+    margin-top:-60%;
+
+}
+
+#perc1{
+    transition: 0.1s ease-in-out;
+    position: absolute;
+    font-weight: bold;
+    font-size: 2rem;
+    color:#ffd5e3;
+    margin-left: -39%;
+    margin-top: -1%;
+    text-shadow: 0 0 10px #ca3ce2, 0 0 20px #4d1157, 0 0 30px #000000, 0 0 40px #541b4c, 0 0 50px #3d1137, 0 0 60px #000000, 0 0 70px #050204;
+
+}
+
+#perc2{
+    transition: 0.1s ease-in-out;
+    position: absolute;
+    z-index: 3;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: -4%;
+    margin-left: 121%;
+    color:#ffd5e3;
+    text-shadow: 0 0 10px #ca3ce2, 0 0 20px #4d1157, 0 0 30px #000000, 0 0 40px #541b4c, 0 0 50px #3d1137, 0 0 60px #000000, 0 0 70px #050204;
+
+}
+
+#perc3{
+    transition: 0.1s ease-in-out;
+    position: absolute;   
+    font-weight: bold;
+    font-size: 2rem;
+    color:#ffd5e3;
+    margin-left: -38%;
+    top:4%;
+    text-shadow: 0 0 10px #ca3ce2, 0 0 20px #4d1157, 0 0 30px #000000, 0 0 40px #541b4c, 0 0 50px #3d1137, 0 0 60px #000000, 0 0 70px #050204;
+
+}
+
+#perc1:hover, #perc2:hover, #perc3:hover{
+    color:white;
+    font-size: 2.2rem;
+}
+/* Contact */
+#contact {
+background-image: url("https://wallpaperbat.com/img/750305-desktop-beautiful-wallpaper-hd-download-black-wallpaper-1080p-hd-wallpaper-background-download.jpg");
+background-size: cover;
+background-attachment: fixed;
+height:80vh;
+color: white;
+font-size: 1rem;
+bottom:0px;
+padding-top:1%;
+padding-left: 2%;
+}
+
+#contact .section-heading {
+    text-align: center;
+    margin-left:-15%;
+    color: white !important;
+}
+
+#contact .social-links i:hover {
+  transform: scale(1.25);
+  transition: 0.3s;
+  text-shadow: 0px 0px 20px #a59f9f;
+}
+
+.contact-container {
+  width: 90%;
+  min-width: 725px;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.25em;
+}
+
+.contact-container .contact-form-container, .contact-container .address-container {
+  flex-basis: 40%;
+  overflow-x: hidden;
+}
+
+.contact-container .contact-form-container .input-field {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border: none;
+  height: 2.5rem;
+  font-size: 1em;
+  color: white;
+  border-bottom: 3px solid white;
+  background-color: #0000;
+}
+
+.contact-container .contact-form-container textarea.input-field {
+  height: 4rem;
+  resize: none;
+}
+
+.contact-container .contact-form-container .input-field:focus {
+  outline: none;
+  border-bottom: 3px solid #bebebe;
+}
+
+.contact-container .contact-form-container .input-field::placeholder {
+  color: #bebebe;
+}
+
+.contact-container .contact-form-container #submit {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.75em;
+  padding: 0.5rem 1rem;
+}
+
+.contact-container .contact-form-container #submit:hover {
+  color: #1262b3;
+}
+
+.contact-container .address-container h2, .contact-container .address-container div {
+  margin: 0.8rem 0;
+}
+
+.contact-container .address-container div, .contact-container .address-container p {
+  font-size: 0.85em;
+}
+.section-heading {
+  margin: 4rem 0;
+  font-size: 2.5em;
+  color: #1262b3;
+}
+.section-heading {
+  margin: 4rem 0;
+  font-size: 2.5em;
+  color: #1262b3;
+}
+.white-border-transparent-button {
+  background-color: #0000;
+  color: white;
+  border: 3px solid white;
+  text-decoration: none;
+}
+
+.white-border-transparent-button:hover, form a {
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.3s;
+  text-decoration: none;
+
+}
+
+/* Certificates */
+
+#certificates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 230vh;
+}
+
+#portfolio-line {
+    margin-bottom: 3%;
+}
+
+#portfolio-container {
+    width: 90%;
+    margin-bottom: 5%;
+    min-width: 725px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 25px lightblue;
+    }
+    50% {
+        box-shadow: 0 0 10px lightblue;
+    }
+    100% {
+        box-shadow: 0 0 25px lightblue;
+    }
+}
+.portfolio-image-container {
+    animation: glow 7s infinite;
+    margin: 5%;
+    width: 40%;
+    height: auto;
+    min-width: 150px;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease-in-out;
+}
+
+
+/*----Projects Section----*/
+#projects-section{
+  height: 233vh;
+}
+
+#projects-section .heading{
+  margin-top:-5%;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #2a2a2a;
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.project-item h3 {
+    color: #03a9f4;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-item p {
+    font-size: 1rem;
+    overflow: auto; /* Allows scrolling if text overflows */
+    max-height: 100px;
+}
+/* Custom scrollbar for the project description */
+.project-item p {
+    font-size: 1rem;
+    overflow: auto;
+    max-height: 100px;
+}
+
+/* Scrollbar track */
+.project-item p::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar thumb */
+.project-item p::-webkit-scrollbar-thumb {
+    background-color: #6db5fd; /* Custom color for the scrollbar thumb */
+    border-radius: 10px;
+    border: 2px solid #2a2a2a; /* Matching border with background */
+}
+
+/* Scrollbar track */
+.project-item p::-webkit-scrollbar-track {
+    background-color: #444; /* Custom color for the scrollbar track */
+    border-radius: 10px;
+}
+
+/* Scrollbar corner */
+.project-item p::-webkit-scrollbar-corner {
+    background-color: #444; /* Custom color for the scrollbar corner */
+}
+
+/* Scrollbar hover effect */
+.project-item p::-webkit-scrollbar-thumb:hover {
+    background-color: #8dbbff; /* Lighter shade on hover */
+}
+
