@@ -327,7 +327,7 @@ header h1{
 #progress1{
     position: absolute;
     border-radius: 50%;
-    width:50%;
+    min-width:50%;
     height:90%;
     margin-left: -153%;
     margin-top: -20%;
@@ -336,7 +336,7 @@ header h1{
 #progress2{
     position: absolute;
     border-radius: 50%;
-    width:50%;
+    min-width:50%;
     height:90%;
     margin-left: -216%;
     margin-top: 20%;
@@ -347,7 +347,7 @@ header h1{
 #progress3{
     position: absolute;
     border-radius: 50%;
-    width:50%;
+    min-width:50%;
     height:90%;
     margin-left:170%;
     margin-top:-60%;
@@ -372,7 +372,6 @@ header h1{
     z-index: 3;
     font-weight: bold;
     font-size: 2rem;
-    margin-top: -4%;
     margin-left: 121%;
     color:#ffd5e3;
     text-shadow: 0 0 10px #ca3ce2, 0 0 20px #4d1157, 0 0 30px #000000, 0 0 40px #541b4c, 0 0 50px #3d1137, 0 0 60px #000000, 0 0 70px #050204;
@@ -386,7 +385,7 @@ header h1{
     font-size: 2rem;
     color:#ffd5e3;
     margin-left: -38%;
-    top:4%;
+    top:1%;
     text-shadow: 0 0 10px #ca3ce2, 0 0 20px #4d1157, 0 0 30px #000000, 0 0 40px #541b4c, 0 0 50px #3d1137, 0 0 60px #000000, 0 0 70px #050204;
 
 }
