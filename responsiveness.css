@@ -1,0 +1,90 @@
+/* media-queries.css */
+
+/* General mobile styles */
+@media only screen and (max-width: 600px) {
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #links li {
+        margin: 10px 0;
+    }
+
+    #photo img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #intro {
+        padding: 20px;
+        text-align: justify;
+    }
+
+    #edu-container {
+        display: block;
+        text-align: center;
+    }
+
+    #edu-container div {
+        margin-bottom: 30px;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .portfolio-image-container img, .project-item img {
+        width: 100%;
+    }
+
+    .projects-container {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .project-item {
+        margin-bottom: 20px;
+    }
+
+    .contact-container {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .input-field {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project-item {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+}
+

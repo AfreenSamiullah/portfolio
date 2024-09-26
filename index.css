@@ -8,6 +8,36 @@ body {
 
 }
 
+section{
+    background-image: url("https://wallpaperswide.com/download/black_pattern_2-wallpaper-2400x1350.jpg");
+    background-size: cover;
+    width: 100vw;
+    height:100vh;
+    z-index: -1;
+
+}
+
+i{margin-right: 1.2rem;}
+    
+
+hr{
+    color: white;
+    border-radius:80%;
+    width:30%;
+    justify-content: center;
+}
+
+.heading{
+	text-align: center;
+	justify-content: center;
+	color: white;
+	font-size: 2rem;
+	padding-top:50px;
+}
+
+
+/* --------------------------------------------------- HEADER ---------------------------------------------------*/
+
 header {
     position: relative;
     height: 75vh; 
@@ -31,7 +61,6 @@ header h1{
     font-family: "Philosopher", sans-serif;
 
 }
-
 
 .background {
     position: absolute;
@@ -81,6 +110,8 @@ header h1{
 
 }
 
+/* --------------------------------------------------- ABOUT ---------------------------------------------------*/
+
 #photo {
     display: flex;
     width: 100%;
@@ -96,14 +127,6 @@ header h1{
     z-index: 3;
 }
 
-section{
-    background-image: url("https://wallpaperswide.com/download/black_pattern_2-wallpaper-2400x1350.jpg");
-    background-size: cover;
-    width: 100vw;
-    height:100vh;
-    z-index: -1;
-
-}
 #About{
     height: 70vh;
 }
@@ -119,33 +142,7 @@ section{
 	font-family: "Rokkitt", serif;
 }
 
-#Contact{
-	width:100%;
-	height:43vh;
-	background-image: url("https://wallpaperbat.com/img/750305-desktop-beautiful-wallpaper-hd-download-black-wallpaper-1080p-hd-wallpaper-background-download.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-.heading{
-	text-align: center;
-	justify-content: center;
-	color: white;
-	font-size: 2rem;
-	padding-top:50px;
-}
-
-i{
-
-		margin-right: 1.2rem;
-	}
-
-hr{
-	color: white;
-	border-radius:80%;
-	width:30%;
-	justify-content: center;
-}
+/* --------------------------------------------------- SKILLS ---------------------------------------------------*/
 
 #Skills{
     height:90vh;
@@ -220,6 +217,9 @@ hr{
     margin-top:-5%;
     color:#7b0000;
 }
+
+/* --------------------------------------------------- EDUCATION ---------------------------------------------------*/
+
 
 .fa-rocket{
     color:red;
@@ -395,118 +395,8 @@ hr{
     color:white;
     font-size: 2.2rem;
 }
-/* Contact */
-#contact {
-background-image: url("https://wallpaperbat.com/img/750305-desktop-beautiful-wallpaper-hd-download-black-wallpaper-1080p-hd-wallpaper-background-download.jpg");
-background-size: cover;
-background-attachment: fixed;
-height:80vh;
-color: white;
-font-size: 1rem;
-bottom:0px;
-padding-top:1%;
-padding-left: 2%;
-}
 
-#contact .section-heading {
-    text-align: center;
-    margin-left:-15%;
-    color: white !important;
-}
-
-#contact .social-links i:hover {
-  transform: scale(1.25);
-  transition: 0.3s;
-  text-shadow: 0px 0px 20px #a59f9f;
-}
-
-.contact-container {
-  width: 90%;
-  min-width: 725px;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  font-size: 1.25em;
-}
-
-.contact-container .contact-form-container, .contact-container .address-container {
-  flex-basis: 40%;
-  overflow-x: hidden;
-}
-
-.contact-container .contact-form-container .input-field {
-  width: 100%;
-  margin-bottom: 2rem;
-  padding-left: 1rem;
-  border: none;
-  height: 2.5rem;
-  font-size: 1em;
-  color: white;
-  border-bottom: 3px solid white;
-  background-color: #0000;
-}
-
-.contact-container .contact-form-container textarea.input-field {
-  height: 4rem;
-  resize: none;
-}
-
-.contact-container .contact-form-container .input-field:focus {
-  outline: none;
-  border-bottom: 3px solid #bebebe;
-}
-
-.contact-container .contact-form-container .input-field::placeholder {
-  color: #bebebe;
-}
-
-.contact-container .contact-form-container #submit {
-  display: block;
-  margin: 0 auto;
-  font-size: 0.75em;
-  padding: 0.5rem 1rem;
-}
-
-.contact-container .contact-form-container #submit:hover {
-  color: #1262b3;
-}
-
-.contact-container .address-container h2, .contact-container .address-container div {
-  margin: 0.8rem 0;
-}
-
-.contact-container .address-container div, .contact-container .address-container p {
-  font-size: 0.85em;
-}
-.section-heading {
-  margin: 4rem 0;
-  font-size: 2.5em;
-  color: #1262b3;
-}
-.section-heading {
-  margin: 4rem 0;
-  font-size: 2.5em;
-  color: #1262b3;
-}
-.white-border-transparent-button {
-  background-color: #0000;
-  color: white;
-  border: 3px solid white;
-  text-decoration: none;
-}
-
-.white-border-transparent-button:hover, form a {
-  font-weight: bold;
-  cursor: pointer;
-  background-color: white;
-  transition: 0.3s;
-  text-decoration: none;
-
-}
-
-/* Certificates */
+/* --------------------------------------------------- CERTIFICATES ---------------------------------------------------*/
 
 #certificates {
     display: flex;
@@ -559,7 +449,8 @@ padding-left: 2%;
 }
 
 
-/*----Projects Section----*/
+/* --------------------------------------------------- PROJECTS ---------------------------------------------------*/
+
 #projects-section{
   height: 233vh;
 }
@@ -658,3 +549,137 @@ padding-left: 2%;
     background-color: #8dbbff; /* Lighter shade on hover */
 }
 
+
+/* --------------------------------------------------- CONTACT ---------------------------------------------------*/
+
+#contact {
+    
+    background-image: url("https://wallpaperbat.com/img/750305-desktop-beautiful-wallpaper-hd-download-black-wallpaper-1080p-hd-wallpaper-background-download.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:80vh;
+    color: white;
+    font-size: 1rem;
+    bottom:-50px;
+    padding-top:1%;
+    padding-left: 2%;
+    }
+    
+    #contact .section-heading {
+        text-align: center;
+        margin-left:-15%;
+        color: white !important;
+    }
+    
+    #contact .social-links i:hover {
+      transform: scale(1.25);
+      transition: 0.3s;
+      text-shadow: 0px 0px 20px #a59f9f;
+    }
+    
+    .contact-container {
+      width: 90%;
+      min-width: 725px;
+      margin-bottom: 4rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-size: 1.25em;
+    }
+    
+    .contact-container .contact-form-container, .contact-container .address-container {
+      flex-basis: 40%;
+      overflow-x: hidden;
+    }
+    
+    .contact-container .contact-form-container .input-field {
+      width: 100%;
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+      border: none;
+      height: 2.5rem;
+      font-size: 1em;
+      color: white;
+      border-bottom: 3px solid white;
+      background-color: #0000;
+    }
+    
+    .contact-container .contact-form-container textarea.input-field {
+      height: 4rem;
+      resize: none;
+    }
+    
+    .contact-container .contact-form-container .input-field:focus {
+      outline: none;
+      border-bottom: 3px solid #bebebe;
+    }
+    
+    .contact-container .contact-form-container .input-field::placeholder {
+      color: #bebebe;
+    }
+    
+    .contact-container .contact-form-container #submit {
+      display: block;
+      margin: 0 auto;
+      font-size: 0.75em;
+      padding: 0.5rem 1rem;
+    }
+    
+    .contact-container .contact-form-container #submit:hover {
+      color: #1262b3;
+    }
+    
+    .contact-container .address-container h2, .contact-container .address-container div {
+      margin: 0.8rem 0;
+    }
+    
+    .contact-container .address-container div, .contact-container .address-container p {
+      font-size: 0.85em;
+    }
+    .section-heading {
+      margin: 4rem 0;
+      font-size: 2.5em;
+      color: #1262b3;
+    }
+    .section-heading {
+      margin: 4rem 0;
+      font-size: 2.5em;
+      color: #1262b3;
+    }
+    .white-border-transparent-button {
+      background-color: #0000;
+      color: white;
+      border: 3px solid white;
+      text-decoration: none;
+    }
+    
+    .white-border-transparent-button:hover, form a {
+      font-weight: bold;
+      cursor: pointer;
+      background-color: white;
+      transition: 0.3s;
+      text-decoration: none;
+    
+    }
+
+    .oval-button {
+        position: relative;
+        background: linear-gradient(to bottom, #d3d3d3, #a9a9a9);
+        border: none;
+        border-radius: 25px; 
+        padding: 15px 30px;
+        box-shadow: 0 4px 8px #050202e0;
+        cursor: pointer;
+        font-size: 16px;
+        transition: transform 0.2s;
+        float:right;
+        right: 4rem;
+        bottom: 4rem;
+    }
+    .oval-button:hover {
+        transform: translateY(-2px);
+    }
+    .oval-button:active {
+        transform: translateY(1px);
+    }
