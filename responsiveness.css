@@ -1,90 +1,366 @@
-/* media-queries.css */
-
-/* General mobile styles */
-@media only screen and (max-width: 600px) {
-    header {
-        text-align: center;
-        padding: 20px;
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 4rem;
     }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+
+    /* --------------------------------------------------- HEADER ---------------------------------------------------*/
 
     #links {
-        display: flex;
         flex-direction: column;
-        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9); /* Slight transparency for effect */
+        position: fixed; /* Use fixed positioning for full-screen coverage */
+        top: -2%;
+        right: 0;
+        width: 50%;
+        height: 100%; /* Full viewport height */
+        padding: 1rem;
+        transform: translateX(100%); /* Initially hidden */
+        transition: transform 0.3s ease-in-out;
+        z-index: 4;
     }
 
     #links li {
-        margin: 10px 0;
+        text-align: center;
+        margin: 40px 0; /* Add more spacing between links */
     }
 
-    #photo img {
-        width: 80%;
-        margin: 0 auto;
+    #links li a {
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    .hamburger {
         display: block;
+        position: fixed; /* Keep hamburger fixed for accessibility */
+        top: 20px;
+        right: 20px;
+        z-index: 5;
     }
 
-    #intro {
-        padding: 20px;
-        text-align: justify;
+    #links.show {
+        transform: translateX(0%); /* Show menu */
+    }
+    
+    header h1 {
+        font-size: 3rem;
+    }
+
+    /*   -----------------------------------ABOUT------------------------------------- */
+   
+    #photo img{
+        width: 30vw;
+    }
+
+    #intro{
+        width: 70%;
+    }
+    
+    /*   -----------------------------------  EDUCATION  ------------------------------------- */
+
+    .percentile{
+        display: none;
     }
 
     #edu-container {
-        display: block;
+        flex-direction: column;
+        align-items: flex-start; /* Align to the left */
+        height: auto; /* Adjust height dynamically */
+        margin-left: 1rem;
+    }
+
+    .timeline {
+        position: absolute;
+        left:1rem;
+        display: flex;
+        align-items: center; /* Align timeline to the left */
+        flex-direction: column;
+        justify-content: center;
+        width: 10%; /* Make the timeline narrower */
+        margin-right: 1rem; /* Add some space between the timeline and content */
+        z-index: 2;
+        height:100%;
+    }
+
+    .fa-rocket {
+        font-size: 1.5rem; /* Adjust size for smaller screens */
+        top: 0; /* Adjust positioning */
+    }
+
+    #dashed-line {
+        height:90%; /* Adjust height dynamically */
+        margin-top: 1rem;
+        width: 3px; /* Ensure the line remains visible */
+    }
+
+    #leftcol, #rightcol {
+        width: 100%; /* Full width for smaller screens */
+        flex-direction: column; /* Stack all `.prog` vertically */
+        justify-content: flex-start; /* Align to the top */
+    }
+
+    .prog {
+        margin-bottom: 2rem; /* Reduce spacing between items */
+        padding-left: 15%; /* Add left padding to align content with the timeline */
+    }
+
+    .marks {
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start; /* Align text to the left */
+    }
+
+    .studygroup, .percentile {
+        width: 100%; /* Take full width */
+    }
+
+    .percentile img {
+        width: 50%; /* Reduce size for smaller screens */
+    }
+
+    /*   ----------------------------------- SKILLS ------------------------------------- */
+    #skills-container{
+        margin: 0rem 1rem;
+    }
+    #skills-container>div {
+        width: 9rem;
+        height: 9rem;
+        background-color: #9bacb773;
+        margin:1rem;
+        border-radius: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    #skills-container div{
+
+        i{
+        font-size: 3.5rem;
+        }
+    
+        span{
+        align-items:center;
+        margin-top:5%;
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        text-shadow: 0px 2% 5% black; }
+    
+        img{
+            width:50%;
+        }
+     }
+
+    /*   ----------------------------------- CONTACT ------------------------------------- */
+
+    #contact {
+        background-image: url("https://wallpaperbat.com/img/750305-desktop-beautiful-wallpaper-hd-download-black-wallpaper-1080p-hd-wallpaper-background-download.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+        font-size: 1rem;
+        padding-top: 1%;
+        padding-left: 2%;
+        display: flex;
+        flex-direction: column; /* Ensures better layout for smaller screens */
+    }
+    
+    #contact .section-heading {
         text-align: center;
+        color: white !important;
+        margin: 2rem 0;
+        font-size: 2rem;
     }
-
-    #edu-container div {
-        margin-bottom: 30px;
-    }
-
-    #container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    .portfolio-image-container img, .project-item img {
-        width: 100%;
-    }
-
-    .projects-container {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .project-item {
-        margin-bottom: 20px;
-    }
-
+    
     .contact-container {
-        display: block;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .input-field {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-}
-
-/* Tablet styles */
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-    #container {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-
-    .projects-container {
+        width: 90%;
+        margin-bottom: 2rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        font-size: 1em;
     }
+    
+    .contact-form-container, .address-container {
+        flex-basis: 100%; /* Makes each section full-width on mobile */
+        margin-bottom: 2rem; /* Adds spacing between sections */
+    }
+    
+    .input-field {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        border: none;
+        height: 2.5rem;
+        font-size: 1em;
+        color: white;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+    }
+    
+    textarea.input-field {
+        height: 3.5rem;
+        resize: none;
+    }
+    
+    .input-field:focus {
+        outline: none;
+        border-bottom: 2px solid #bebebe;
+    }
+    
+    .input-field::placeholder {
+        color: #bebebe;
+        font-size: 0.9em;
+    }
+    
+    #submit {
+        display: block;
+        margin: 0 auto;
+        font-size: 0.9em;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+    
+    #submit:hover {
+        color: #1262b3;
+    }
+    
+    .address-container div {
+        margin: 0.8rem 0;
+        font-size: 0.9em;
+    }
+    
+    .address-container div i {
+        margin-right: 1rem;
+    }
+    
+    .address-container p {
+        font-size: 0.8em;
+    }
+    
+    .white-border-transparent-button {
+        background-color: transparent;
+        color: white;
+        border: 3px solid white;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    
+    .white-border-transparent-button:hover, form a {
+        font-weight: bold;
+        cursor: pointer;
+        background-color: white;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+    
+    .oval-button {
+        position: relative;
+        background: linear-gradient(to bottom, #d3d3d3, #a9a9a9);
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        box-shadow: 0 4px 8px #050202e0;
+        cursor: pointer;
+        font-size: 14px;
+        transition: transform 0.2s;
+        float: right;
+        right: 2rem;
+        bottom: 2rem;
+    }
+    
+    .oval-button:hover {
+        transform: translateY(-2px);
+    }
+    
+    .oval-button:active {
+        transform: translateY(1px);
+    }
+    
+    /* Media Query for Mobile View */
+    @media (max-width: 768px) {
+        #contact {
+            font-size: 0.9rem;
+            padding: 1rem;
+        }
+    
+        #contact .section-heading {
+            font-size: 1.5rem;
+        }
+    
+        .contact-container {
+            font-size: 0.9em;
+        }
+    
+        .input-field {
+            font-size: 0.9em;
+            height: 2rem;
+        }
+    
+        textarea.input-field {
+            height: 3rem;
+        }
+    
+        #submit {
+            font-size: 0.8em;
+            padding: 0.4rem 0.8rem;
+        }
+    
+        .address-container div {
+            font-size: 0.8em;
+        }
+    
+        .address-container p {
+            font-size: 0.7em;
+        }
+    
+        .white-border-transparent-button {
+            font-size: 0.9em;
+        }
+    
+        .oval-button {
+            padding: 8px 15px;
+            font-size: 12px;
+            right: 1rem;
+            bottom: 1rem;
+        }
+    }   
 
-    .project-item {
-        width: 48%;
-        margin-bottom: 30px;
+}
+
+/*For screens smaller than 576px*/
+@media (max-width: 576px) {
+
+    /*   -----------------------------------ABOUT------------------------------------- */
+
+    #intro{
+        width: 70%;
+        font-size: 15px;
     }
 }
 
+    @media (max-width: 450px) {
+
+        /*   -----------------------------------ABOUT------------------------------------- */
+    
+        #photo {
+        }
+    
+        #intro{
+            width: 70%;
+            font-size: 15px;
+        }
+}
